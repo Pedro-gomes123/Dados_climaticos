@@ -1,0 +1,15 @@
+
+˜# 1. Subir Kafka com Docker
+docker-compose up -d
+
+# 2. Instalar dependências
+pip install kafka-python requests pandas matplotlib schedule
+
+# 3. Iniciar o Consumer (deixar rodando em terminal separado)
+python consumer/consumer.py
+
+# 4. Iniciar o Producer (roda a cada 30min)
+python producer/producer.py
+
+# 5. Gerar relatório do dia
+python report/report.py
